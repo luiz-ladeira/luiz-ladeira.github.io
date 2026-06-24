@@ -3,40 +3,25 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-<<<<<<< HEAD
-first_name: 
-middle_name:
-last_name: 
-email: 
-=======
 first_name: Luiz
 middle_name: Maia
 last_name: Ladeira
+email:
 contact_note: >
   Email is the best way to reach me.
->>>>>>> 6d2ae91d64bc5bf39f1d47f7759ddec951002d68
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Postdoctoral researcher in systems biology and toxicology at the GIGA Institute, University of Liège.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-<<<<<<< HEAD
 
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
-
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-
-url: https://ontox-pms.github.io # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/
-=======
 keywords: toxicology, systems biology, physiological maps, disease maps, SBGN, in silico methods, academic-website # add your own keywords or leave empty
+
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧬 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://luiz-ladeira.github.io # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
->>>>>>> 6d2ae91d64bc5bf39f1d47f7759ddec951002d68
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
