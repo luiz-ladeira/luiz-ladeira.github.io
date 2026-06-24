@@ -1,0 +1,13 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: luizmaialadeira@gmail.com
+github_username: luiz-ladeira
+linkedin_username: luizladeira
+scholar_userid: 8pFoo94AAAAJ
+rss_icon: false
+# lattes_id: 6144420994544611 # Lattes CV ID
+# --- Other profiles you can uncomment and fill in ---
+# orcid_id: # ORCID iD (e.g., 0000-0000-0000-0000)
+# researchgate_profile: # ResearchGate username
+# work_url: # Personal/lab website URL
