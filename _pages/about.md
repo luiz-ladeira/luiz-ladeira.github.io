@@ -6,7 +6,7 @@ subtitle: Postdoctoral Researcher at the <a href='http://www.biomech.ulg.ac.be/'
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_color.png
   image_circular: true # crops the image to make it circular
   more_info:
 

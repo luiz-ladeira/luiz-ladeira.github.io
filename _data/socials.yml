@@ -1,12 +1,13 @@
 # this file contains the social media links and usernames of the author
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-email: luizmaialadeira@gmail.com # your email address
-rss_icon: false # set to true to show the RSS icon
-# --- Fill these in with your own profiles, then uncomment the lines you want shown ---
-# cv_pdf: /assets/pdf/cv.pdf # path to your CV PDF file (drop the file in assets/pdf/)
-# scholar_userid: # your Google Scholar ID (the value after "user=" in your Scholar profile URL)
-# orcid_id: # your ORCID iD (e.g., 0000-0000-0000-0000)
-# linkedin_username: # your LinkedIn username
-# github_username: luiz-ladeira # your GitHub username
-# researchgate_profile: # your ResearchGate profile name
+email: luizmaialadeira@gmail.com
+github_username: luiz-ladeira
+linkedin_username: luizladeira
+scholar_userid: 8pFoo94AAAAJ
+# lattes_id: 6144420994544611 # Lattes CV ID (if supported by jekyll-socials, add to plugin docs)
+rss_icon: false
+# --- Other profiles you can uncomment and fill in ---
+# orcid_id: # ORCID iD (e.g., 0000-0000-0000-0000)
+# researchgate_profile: # ResearchGate username
+# work_url: # Personal/lab website URL
