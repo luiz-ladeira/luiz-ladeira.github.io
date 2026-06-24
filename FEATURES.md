@@ -1,113 +1,164 @@
 # al-folio Features Checklist
 
-Track which features of the al-folio template are actively used on this site.
+A snapshot of every feature in this site and its **current state**.
 
-## Core Pages & Content
+- `[x]` = enabled / configured with your content
+- `[ ]` = available but disabled, or still holding example content
 
-- [x] **About/Home Page** — Landing page with bio, profile picture, and social links
-- [ ] **Blog** — Blog posts with tags, categories, and pagination
-- [ ] **Publications** — Bibliography-driven publications page with badges and filtering
-- [ ] **Projects** — Portfolio cards with categories and descriptions
-- [ ] **CV** — Curriculum vitae (RenderCV YAML or JSON Resume format)
-- [ ] **Teaching** — Courses and teaching materials
-- [ ] **News/Announcements** — News items and announcements sidebar
-- [ ] **Books** — Book collection/review page
-- [ ] **Repositories** — GitHub profile stats and pinned repos
+> ⚠️ **BLOCKER — unresolved merge conflicts committed.** `_config.yml` and
+> `_pages/about.md` currently contain literal `<<<<<<< HEAD` / `=======` /
+> `>>>>>>>` conflict markers (committed in the `update` / `a` commits). The
+> Jekyll build **will fail** until these are resolved. This file documents the
+> repo as-is; nothing was modified per your request.
 
-## Content Features
-
-- [x] **Social Icons** — GitHub, LinkedIn, Google Scholar, email
-- [x] **Profile Picture** — Circular profile image
-- [ ] **Selected Papers** — Highlighted/featured publications
-- [ ] **Latest Blog Posts** — Sidebar with newest posts
-- [ ] **External Blog Posts** — RSS feed integration (Medium, etc.)
-
-## Interactive Features
-
-- [ ] **Search** — Full-text search with Cmd-K palette (ninja-keys)
-- [ ] **Comments** — Giscus or Disqus discussion threads on posts
-- [ ] **Comments Moderation** — Admin approval for comments
-- [ ] **Newsletter Signup** — Loops.so email signup form
-- [ ] **Dark Mode Toggle** — Light/dark theme switcher
-- [ ] **Tooltips** — Auto-generated section tooltips
-
-## Media & Visualization
-
-- [x] **Responsive Images** — WebP conversion and lazy loading
-- [ ] **Image Zoom** — Medium.com-style image lightbox
-- [ ] **Image Galleries** — Grouped image displays
-- [ ] **Math Typesetting** — MathJax for LaTeX equations
-- [ ] **Code Highlighting** — Syntax highlighting with Rouge
-- [ ] **Diagrams** — Mermaid, PlantUML, or other diagram support
-- [ ] **Charts** — Chart.js, Plotly, Vega, ECharts, Leaflet maps
-- [ ] **TikZ Diagrams** — TikZJax for rendering TikZ code
-- [ ] **Jupyter Notebooks** — Embedded notebook rendering
-
-## SEO & Metadata
-
-- [ ] **Open Graph Tags** — Social media preview cards
-- [ ] **Schema.org Markup** — Structured data for search engines
-- [ ] **Google Analytics** — Google Analytics tracking
-- [ ] **Google Search Console** — Site verification
-- [ ] **Bing Webmaster Tools** — Bing site verification
-- [ ] **Sitemap** — XML sitemap generation
-- [ ] **RSS Feed** — Blog RSS feed
-
-## Analytics & Monitoring
-
-- [ ] **Google Analytics** — Traffic analytics
-- [ ] **Cronitor RUM** — Real User Monitoring
-- [ ] **Pirsch Analytics** — Privacy-focused analytics
-- [ ] **OpenPanel** — Event tracking
-
-## Academic Features
-
-- [ ] **Publication Badges** — Altmetric, Dimensions, Google Scholar, Inspire HEP citations
-- [ ] **Bibliography Management** — Bibtex parsing and APA formatting
-- [ ] **Author Name Variants** — Handle name variations (e.g., first name/initials)
-- [ ] **Max Author Limit** — Expand author lists on click
-- [ ] **Publication Thumbnails** — Preview images for papers
-
-## Integrations
-
-- [ ] **Docker Support** — Containerized local development
-- [ ] **GitHub Actions CI/CD** — Automated testing and deployment
-- [ ] **Pre-commit Hooks** — Linting before commits
-- [ ] **Prettier Formatting** — Code style enforcement
-- [ ] **Visual Regression Tests** — Playwright screenshot comparisons
-- [ ] **Lighthouse Performance** — Performance monitoring
-
-## Design & Customization
-
-- [x] **Fixed Navbar** — Sticky navigation bar
-- [x] **Fixed Footer** — Sticky footer
-- [ ] **Project Masonry Layout** — Auto-arrange project cards
-- [ ] **Project Categories** — Filter projects by category
-- [ ] **Progress Bar** — Scroll progress indicator
-- [ ] **GDPR Cookie Consent** — Cookie banner and consent management
-- [ ] **Tailwind CSS** — Utility-first styling (v1.x)
-- [ ] **Responsive Design** — Mobile-first layout
-- [ ] **Theme Customization** — Light/dark mode colors
-
-## Performance & Build
-
-- [ ] **CSS Purging** — Remove unused CSS (PurgeCSS)
-- [ ] **JavaScript Minification** — Terser minification
-- [ ] **Image Optimization** — ImageMagick WebP conversion
-- [ ] **Asset Versioning** — Cache busting for assets
-- [ ] **Incremental Jekyll Build** — Fast rebuilds
-
-## Bootstrap Compatibility (v1.0-v1.2, deprecated)
-
-- [ ] **Bootstrap CSS/JS** — Bootstrap v4 compatibility layer (time-limited support)
+> **Version:** This is al-folio **v0.x** (classic) — the runtime lives **locally**
+> in `_layouts/`, `_includes/`, `_sass/`, `_plugins/` (you own and can edit it
+> directly). Social links use flat `*_username` keys in `_config.yml`.
+> Custom additions beyond stock al-folio: `map/app.R` (R/Shiny), `reports/`,
+> `news.html`, `bio.md`, `header-backup.html`.
 
 ---
 
-**Last Updated:** 2026-06-24
+## Pages (`_pages/`)
 
-**Active Features:** About page, social links, responsive images, fixed navbar/footer
+| Page | State | Notes |
+| --- | --- | --- |
+| About / Home (`about.md`) | [x] | **Your bio** (⚠️ has conflict markers) |
+| Bio (`bio.md`) | [ ] | Extra bio page |
+| Projects (`projects.md`) | [ ] | Example projects in `_projects/` |
+| Publications (`publications.md`) | [ ] | Example `papers.bib` |
+| CV (`cv.md`) | [ ] | Driven by `_data/cv.yml` / `resume.json` |
+| Teaching (`teaching.md`) | [ ] | Example content |
+| News (`news.md` / `news.html`) | [ ] | Example news items |
+| Repositories (`repositories.md`) | [ ] | GitHub stats/repos |
+| Profiles (`profiles.md`) | [ ] | Multi-profile people page |
+| Dropdown (`dropdown.md`) | [ ] | Example navbar dropdown |
+| about_einstein | [ ] | Demo page |
+| 404 (`404.html`) | [x] | Error page |
+| Blog | [ ] | `blog/` dir + `blog_name: ladeira`; example posts in `_posts/` |
 
-**Notes:** 
-- Most specialized academic features (publications, CV, teaching) are available but not yet configured
-- Security scanning (CodeQL) and testing workflows can be disabled if not needed
-- Focus first on expanding Blog and Projects sections if planning multi-section site
+## Layout & Navigation
+
+| Feature | State |
+| --- | --- |
+| Fixed navbar | [x] `navbar_fixed: true` |
+| Fixed footer | [x] `footer_fixed: true` |
+| Dark mode toggle | [x] `enable_darkmode: true` |
+| Max width 1000px | [x] |
+| Social links in navbar | [ ] `enable_navbar_social: false` |
+| Section tooltips | [ ] `enable_tooltips: false` |
+| Scroll progress bar | [ ] `enable_progressbar: false` |
+
+## Social & Contact (flat keys in `_config.yml`)
+
+| Link | State |
+| --- | --- |
+| GitHub | [x] luiz-ladeira |
+| LinkedIn | [x] luizladeira |
+| Google Scholar | [x] 8pFoo94AAAAJ |
+| Lattes | [x] 6144420994544611 |
+| RSS icon | [ ] `rss_icon: false` |
+| ORCID, Twitter, Mastodon, ResearchGate, Scopus, etc. | [ ] empty templates |
+
+## Content / Profile Components (`_includes/`)
+
+| Feature | State |
+| --- | --- |
+| Social icons block (`social.html`) | [x] `social: true` on about |
+| Profile picture | [x] `prof_pic.png`, circular |
+| News on about page | [ ] `news: false` |
+| Latest posts on about page | [ ] `latest_posts: false` |
+| Selected papers on about page | [ ] `selected_papers: false` |
+| Figure / audio / video includes | [ ] available |
+| Related posts | [ ] available |
+
+## Media & Visualization
+
+| Feature | State | Plugin |
+| --- | --- | --- |
+| Responsive WebP images | [x] `imagemagick.enabled: true` | jekyll-imagemagick |
+| Image zoom (medium-style) | [x] `enable_medium_zoom: true` | medium-zoom |
+| Project masonry layout | [x] `enable_masonry: true` | masonry |
+| Math typesetting (MathJax) | [x] `enable_math: true` | MathJax |
+| Diagrams (Mermaid/PlantUML/etc.) | [ ] plugin present, unused | jekyll-diagrams |
+| Jupyter notebooks | [ ] plugin present, unused | jekyll-jupyter-notebook |
+| Twitter embeds | [ ] plugin present, unused | jekyll-twitter-plugin |
+| Table of contents | [ ] plugin present | jekyll-toc |
+
+## Academic / Publications (`jekyll/scholar`)
+
+| Feature | State |
+| --- | --- |
+| Bibliography (BibTeX → APA) | [ ] Example `papers.bib`; scholar name set to "Ladeira" |
+| Publication thumbnails | [x] `enable_publication_thumbnails: true` |
+| Altmetric badge | [x] enabled |
+| Dimensions badge | [x] enabled |
+| Author name variants | [x] configured (Ladeira / Maia Ladeira / M. L.) |
+
+## Blog (`jekyll-archives` + `jekyll-paginate-v2`)
+
+| Feature | State |
+| --- | --- |
+| Pagination | [x] `pagination.enabled: true` |
+| Related posts | [x] `related_blog_posts.enabled: true` |
+| Year / tag / category archives | [x] `jekyll-archives` |
+| Example posts | [ ] still al-folio demo posts in `_posts/` |
+
+## Comments & Engagement
+
+| Feature | State |
+| --- | --- |
+| Giscus comments | [ ] `giscus.repo` empty (not configured) |
+| Disqus comments | [ ] default `al-folio` shortname (not yours) |
+
+## Analytics & SEO
+
+| Feature | State |
+| --- | --- |
+| Google Analytics | [x] `enable_google_analytics: true` → `G-EVN0SL22KD` ⚠️ from old site |
+| Cronitor RUM | [ ] `enable_cronitor_analytics: false` |
+| Sitemap | [x] jekyll-sitemap (auto) |
+| RSS feed | [x] jekyll-feed (auto) |
+| Open Graph tags | [ ] `serve_og_meta: false` |
+| Schema.org markup | [ ] `serve_schema_org: false` |
+| Google Search Console | [ ] `enable_google_verification: false` |
+| Bing verification | [ ] `enable_bing_verification: false` |
+
+## Projects
+
+| Feature | State |
+| --- | --- |
+| Project cards | [ ] 9 example projects in `_projects/` |
+| Project categories filter | [ ] `enable_project_categories: false` |
+| Horizontal project layout | [ ] include available |
+
+## Custom Additions (non-stock)
+
+| Item | State | Notes |
+| --- | --- | --- |
+| `map/app.R` | [x] present | R/Shiny app (not served by Jekyll) |
+| `reports/` | [x] present | PageSpeed/Lighthouse SVGs |
+| `news.html` | [x] present | Root-level news page |
+| `bio.md` | [x] present | Secondary bio page |
+
+## Build & Tooling
+
+| Feature | State |
+| --- | --- |
+| GitHub Pages deploy | [x] `.github/workflows/deploy.yml` |
+| `.nojekyll` | [x] present |
+| CSS purging (PurgeCSS) | [x] `purgecss.config.js` |
+| JS/CSS minification | [x] jekyll-minifier |
+| Docker dev environment | [x] `docker-compose.yml` |
+| Email obfuscation | [x] jekyll-email-protect |
+| External link attributes | [x] jekyll-link-attributes |
+
+---
+
+**Last analyzed:** 2026-06-24 (after reset to previous v0.x version)
+
+**Immediate action needed:** Resolve the merge-conflict markers in
+`_config.yml` and `_pages/about.md` — the build is broken until then.
+
+**Currently *your* content:** About/bio + social links + Google Analytics.
+Projects, publications, CV, teaching, news still show al-folio example content.
