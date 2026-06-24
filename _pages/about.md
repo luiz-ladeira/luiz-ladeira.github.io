@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 
+subtitle: Postdoctoral Researcher at the <a href='http://www.biomech.ulg.ac.be/'>Biomechanics Research Unit</a>, <a href='https://www.giga.uliege.be/cms/c_4113263/fr/giga'>GIGA Institute</a> &middot; <a href='https://www.uliege.be/cms/c_8699436/en/uliege'>University of Liège</a>, Belgium.
 
 profile:
   align: right
