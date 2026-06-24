@@ -7,8 +7,6 @@ first_name: Luiz
 middle_name: Maia
 last_name: Ladeira
 email:
-contact_note: >
-  Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Postdoctoral researcher in systems biology and toxicology at the GIGA Institute, University of Liège.
 footer_text: >
@@ -106,7 +104,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  You can find me by the coffee machine. If I'm not there, an email is the faster way to contact me.
+  Email is the best way to reach me.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
