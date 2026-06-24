@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Luiz
 middle_name:
 last_name: Ladeira
-email:
+email: lcladeira@uliege.be
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Postdoctoral researcher in systems biology and toxicology at the GIGA Institute, University of Liège.
 footer_text: >
