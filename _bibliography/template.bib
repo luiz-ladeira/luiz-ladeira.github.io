@@ -1,0 +1,331 @@
+---
+---
+
+@string{aps = {American Physical Society,}}
+
+% ============================================================================
+% TEMPLATE: al-folio BibTeX Publications File
+% ============================================================================
+% This template demonstrates best practices for al-folio GitHub pages.
+% Delete or modify these examples to add your own publications.
+%
+% ORGANIZATION:
+% - Featured/Selected articles (set selected = {true})
+% - Journal articles (@article)
+% - Conference papers (@inproceedings)
+% - Books & chapters (@book, @incollection)
+% - Preprints & technical reports (@misc)
+%
+% KEY FIELDS:
+% Required: title, author, year, journal/booktitle
+% Recommended: doi, abstract
+% Display: abbr, preview, bibtex_show, selected
+% Social: altmetric, dimensions, google_scholar_id
+%
+% ============================================================================
+
+
+% ============================================================================
+% FEATURED PUBLICATIONS (These appear in a special section at the top)
+% ============================================================================
+
+@article{yourname_machine_2025,
+  abbr        = {Nature Comp. Biol.},
+  bibtex_show = {true},
+  title       = {Machine learning identifies novel biomarkers in genomic data},
+  author      = {Your Name and Collaborator, A. and Collaborator, B.},
+  abstract    = {We present a novel deep learning approach to identify disease-associated biomarkers from single-cell RNA-seq data. Our method achieves 95% accuracy in cross-validated prediction tasks and reveals previously unknown gene-gene interactions associated with disease progression. The approach is implemented in Python and is available as an open-source package.},
+  journal     = {Nature Computational Biology},
+  volume      = {5},
+  number      = {3},
+  pages       = {234--248},
+  year        = {2025},
+  doi         = {10.1038/s43588-024-00789-x},
+  url         = {https://www.nature.com/articles/s43588-024-00789-x},
+  pdf         = {yourname_2025_ml_biomarkers.pdf},
+  preview     = {ml_biomarkers_preview.png},
+  selected    = {true},
+  altmetric   = {156234},
+  dimensions  = {true},
+  annotation  = {**Awarded Best Computational Paper 2025** at the Systems Biology Conference}
+}
+
+@article{yourname_spatial_2024,
+  abbr        = {Genome Biology},
+  bibtex_show = {true},
+  title       = {Spatial transcriptomics reveals microenvironment dynamics in tumor ecosystems},
+  author      = {Your Name and Smith, Jane and Patel, Rajesh},
+  abstract    = {Leveraging spatial transcriptomics and network analysis, we mapped the tumor microenvironment at cellular resolution. Our R-based pipeline integrates multiple -omics layers and identifies key cell-cell interactions driving tumor progression. The method handles tissue sections with up to 500,000 cells and is robust to batch effects.},
+  journal     = {Genome Biology},
+  volume      = {26},
+  number      = {1},
+  pages       = {45},
+  year        = {2024},
+  doi         = {10.1186/s13059-024-03195-x},
+  url         = {https://genomebiology.biomedcentral.com/articles/10.1186/s13059-024-03195-x},
+  pdf         = {yourname_2024_spatial_transcriptomics.pdf},
+  preview     = {spatial_preview.gif},
+  selected    = {true},
+  google_scholar_id = {dLh5KAsAAJ},
+  annotation  = {**Most Downloaded Paper** on Genome Biology in Q2 2024}
+}
+
+% ============================================================================
+% JOURNAL ARTICLES
+% ============================================================================
+
+@article{yourname_single_cell_2023,
+  abbr        = {Cell Reports},
+  bibtex_show = {true},
+  title       = {Single-cell RNA-seq atlas of human developmental stages},
+  author      = {Your Name and Johnson, Michael and Lee, Sarah},
+  abstract    = {We present a comprehensive single-cell transcriptomic atlas covering 15 developmental timepoints across 25 cell types. Using unsupervised clustering and trajectory inference, we identified gene regulatory networks governing cell fate decisions. The atlas is publicly available through an interactive R Shiny application for community exploration.},
+  journal     = {Cell Reports},
+  volume      = {42},
+  number      = {8},
+  pages       = {112567},
+  year        = {2023},
+  doi         = {10.1016/j.celrep.2023.112567},
+  pdf         = {yourname_2023_atlas.pdf},
+  preview     = {atlas_preview.png},
+  selected    = {true},
+  altmetric   = {142356},
+  google_scholar_id = {u5HHAwAJ}
+}
+
+@article{yourname_network_2023,
+  abbr        = {Bioinformatics},
+  title       = {Network analysis of protein-protein interactions in disease pathways},
+  author      = {Your Name and Chen, Wei and Gupta, Priya},
+  abstract    = {We developed GraphNet, a Python package for analyzing weighted biological networks. It implements novel centrality measures optimized for metabolic and signaling networks, reducing computation time by 60% compared to existing methods while improving biological relevance of predictions.},
+  journal     = {Bioinformatics},
+  volume      = {39},
+  number      = {6},
+  pages       = {btad342},
+  year        = {2023},
+  doi         = {10.1093/bioinformatics/btad342},
+  url         = {https://academic.oup.com/bioinformatics/article/39/6/btad342},
+  pdf         = {yourname_2023_network.pdf},
+  bibtex_show = {true},
+  altmetric   = {128743}
+}
+
+@article{yourname_multi_omics_2022,
+  abbr        = {Nature Methods},
+  title       = {Multi-omics integration reveals regulatory hubs in cancer metabolism},
+  author      = {Your Name and Rodriguez, Carlos and Tanaka, Yuki},
+  abstract    = {IntegrateOmics is a comprehensive R framework for integrating genomics, proteomics, and metabolomics data. It uses tensor factorization to identify coordinated changes across omics layers and reveals previously unknown regulatory relationships in cancer cell lines.},
+  journal     = {Nature Methods},
+  volume      = {19},
+  number      = {11},
+  pages       = {1423--1432},
+  year        = {2022},
+  doi         = {10.1038/s41592-022-01627-w},
+  pdf         = {yourname_2022_multiomics.pdf},
+  preview     = {multiomics_preview.gif},
+  bibtex_show = {true},
+  dimensions  = {true},
+  altmetric   = {135892},
+  annotation  = {*Featured in Nature Methods [research highlight](https://www.nature.com/articles/s41592-022-01650-x)*}
+}
+
+@article{yourname_evolution_2022,
+  title       = {Evolution of gene regulatory networks during vertebrate development},
+  author      = {Your Name and Kim, Sung-Hee and Petrov, Dmitri},
+  journal     = {eLife},
+  volume      = {11},
+  pages       = {e75231},
+  year        = {2022},
+  doi         = {10.7554/eLife.75231},
+  url         = {https://elifesciences.org/articles/75231},
+  pdf         = {yourname_2022_grn_evolution.pdf},
+  bibtex_show = {true},
+  google_scholar_id = {Y0pCki6q_DkC}
+}
+
+@article{yourname_comparative_2021,
+  abbr        = {Mol. Syst. Biol.},
+  title       = {Comparative genomics of viral adaptation mechanisms},
+  author      = {Your Name and Adams, Emma and Bennett, David},
+  abstract    = {We compared 1,200 viral genomes to identify convergent amino acid substitutions associated with host adaptation. Machine learning models trained on these patterns predict adaptation outcomes with 88% accuracy, suggesting universal principles governing viral evolution across diverse species.},
+  journal     = {Molecular Systems Biology},
+  volume      = {17},
+  number      = {8},
+  pages       = {e9876},
+  year        = {2021},
+  doi         = {10.15252/msb.20219876},
+  bibtex_show = {true},
+  altmetric   = {98765}
+}
+
+% ============================================================================
+% CONFERENCE PAPERS & PROCEEDINGS
+% ============================================================================
+
+@inproceedings{yourname_deep_learning_2024,
+  abbr        = {ISMB 2024},
+  bibtex_show = {true},
+  title       = {Deep learning for prediction of cancer immunotherapy response},
+  author      = {Your Name and Mittra, Sahil and Zhang, Lisa},
+  abstract    = {We trained a convolutional neural network on whole-slide immunohistochemistry images to predict immunotherapy response. The model integrates spatial information and tumor microenvironment composition, achieving AUC of 0.92 in held-out test set. Implementation available in PyTorch.},
+  booktitle   = {Proceedings of the Intelligent Systems for Molecular Biology Conference (ISMB)},
+  pages       = {23--31},
+  year        = {2024},
+  doi         = {10.1093/bioinformatics/btac234},
+  location    = {Montreal, Canada},
+  pdf         = {yourname_2024_ismb_immunotherapy.pdf},
+  preview     = {immunotherapy_preview.png}
+}
+
+@inproceedings{yourname_interpretability_2023,
+  title       = {Explaining black-box models in systems biology: SHAP analysis of neural networks},
+  author      = {Your Name and Foster, Rachel and Iyer, Venkat},
+  booktitle   = {Proceedings of the Pacific Symposium on Biocomputing (PSB)},
+  pages       = {234--245},
+  year        = {2023},
+  location    = {Kohala Coast, Hawaii},
+  doi         = {10.1142/9789811232701_0021},
+  url         = {https://psb.stanford.edu/},
+  bibtex_show = {true}
+}
+
+@inproceedings{yourname_reproducibility_2022,
+  abbr        = {RECOMB 2022},
+  title       = {Containerized workflows for reproducible computational biology},
+  author      = {Your Name and Olson, Nathan},
+  booktitle   = {Research in Computational Molecular Biology (RECOMB)},
+  pages       = {156--167},
+  year        = {2022},
+  location    = {Oakland, California},
+  doi         = {10.1007/978-3-031-04749-7_13},
+  pdf         = {yourname_2022_recomb_workflows.pdf},
+  bibtex_show = {true}
+}
+
+% ============================================================================
+% PREPRINTS & TECHNICAL REPORTS
+% ============================================================================
+
+@misc{yourname_preprint_2025,
+  abbr        = {bioRxiv},
+  title       = {Novel computational approach for detecting epistatic interactions},
+  author      = {Your Name and Park, Jin Ho and Gonzalez, Maria},
+  year        = {2025},
+  month       = {January},
+  doi         = {10.1101/2025.01.15.632456},
+  url         = {https://www.biorxiv.org/content/10.1101/2025.01.15.632456v1},
+  note        = {Preprint. Under review at Genome Research.},
+  pdf         = {yourname_2025_epistasis_preprint.pdf},
+  annotation  = {*Preprint version - peer-reviewed version coming soon*}
+}
+
+@misc{yourname_github_2024,
+  title       = {{BioNetFlow}: A Python package for biological network analysis},
+  author      = {Your Name and Collaborator, A.},
+  year        = {2024},
+  url         = {https://github.com/yourname/bionetflow},
+  note        = {Software. v2.1.0. Available at https://pypi.org/project/bionetflow/},
+  preview     = {github_preview.png},
+  annotation  = {**1,200+ GitHub stars** | **500+ citations** in published work}
+}
+
+@misc{yourname_tutorial_2024,
+  title       = {A practical guide to single-cell RNA-seq analysis in R},
+  author      = {Your Name and Learning, Institute for},
+  year        = {2024},
+  note        = {Educational resource},
+  url         = {https://yourwebsite.com/scrnaseq-tutorial},
+  annotation  = {**2,000+ views** on Open Educational Portal}
+}
+
+% ============================================================================
+% BOOKS & BOOK CHAPTERS
+% ============================================================================
+
+@book{yourname_systems_2023,
+  abbr        = {CRC Press},
+  title       = {Systems Biology: Methods and Protocols for Computational Analysis},
+  author      = {Your Name and Editor, Senior},
+  publisher   = {CRC Press},
+  year        = {2023},
+  edition     = {2nd},
+  doi         = {10.1201/9781003123456},
+  url         = {https://www.routledge.com/},
+  preview     = {book_cover.png},
+  annotation  = {Comprehensive textbook with hands-on R/Python examples}
+}
+
+@incollection{yourname_chapter_2023,
+  abbr        = {Methods Enzymol.},
+  title       = {Computational approaches to network inference from omics data},
+  author      = {Your Name and Smith, Jane},
+  booktitle   = {Methods in Enzymology},
+  publisher   = {Academic Press},
+  volume      = {678},
+  pages       = {234--267},
+  year        = {2023},
+  doi         = {10.1016/bs.mie.2023.01.012},
+  editor      = {Editor, Lead},
+  bibtex_show = {true}
+}
+
+% ============================================================================
+% OPTIONAL: FEATURED PRESENTATIONS (Can use @misc type)
+% ============================================================================
+
+@misc{yourname_keynote_2024,
+  title       = {Machine learning for precision medicine: Challenges and opportunities},
+  author      = {Your Name},
+  year        = {2024},
+  month       = {June},
+  note        = {Keynote address at Annual Computational Biology Summit},
+  location    = {Boston, Massachusetts},
+  url         = {https://yourdomain.com/talks/keynote-2024},
+  annotation  = {**Invited keynote speaker**}
+}
+
+% ============================================================================
+% NOTES ON FIELD USAGE
+% ============================================================================
+%
+% REQUIRED FIELDS:
+%   - title: Keep concise but informative
+%   - author: Format as "First Last and First Last"
+%   - year: Used for chronological sorting
+%   - journal/booktitle: Publication venue
+%
+% HIGHLY RECOMMENDED:
+%   - doi: Makes paper discoverable and citable
+%   - abstract: 100-150 words describing your work
+%   - pdf: Path to your PDF (upload to _assets/pdf/)
+%
+% DISPLAY FIELDS (Make your page more attractive):
+%   - abbr: 3-5 letter abbreviation shown as badge
+%   - preview: Image path (gif, jpg, png) shown next to entry
+%   - selected: Set to {true} to feature on main page
+%   - bibtex_show: Set to {true} to show BibTeX citation button
+%
+% IMPACT & SOCIAL:
+%   - altmetric: Numeric ID from Altmetric (shows social media impact)
+%   - dimensions: Set to {true} to show citation count badge
+%   - google_scholar_id: ID for linking to Google Scholar
+%
+% CUSTOM TEXT:
+%   - annotation: Add custom note (supports markdown like **bold** and *italic*)
+%   - additional_info: Extra details shown below entry
+%   - award: Recognition or honors
+%   - note: Generic note field
+%
+% ============================================================================
+% FILE ORGANIZATION TIPS
+% ============================================================================
+%
+% 1. Group by publication type (@article, @inproceedings, @book, @misc)
+% 2. Within each group, order by year (newest first)
+% 3. Mark your best/most impactful work with selected = {true}
+% 4. Always include doi if available (essential for GitHub page rendering)
+% 5. Use pdf field to link PDFs stored in _assets/pdf/ directory
+% 6. Create preview images (300x300px PNG/GIF) for visual appeal
+% 7. Write compelling abstracts to increase citations
+%
+% ============================================================================
